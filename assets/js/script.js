@@ -267,33 +267,39 @@ document.addEventListener('DOMContentLoaded', function() {
   // WhatsApp order form submission
   document.getElementById('whatsappOrderForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    
+
     const quantity = document.getElementById('quantity').value;
-    const name = document.getElementById('customerName').value;
-    const phone = document.getElementById('customerPhone').value;
-    const address = document.getElementById('customerAddress').value;
-    const notes = document.getElementById('customerNotes').value;
-    
+    const name = document.getElementById('customerName').value.trim();
+    const phone = document.getElementById('customerPhone').value.trim();
+    const address = document.getElementById('customerAddress').value.trim();
+    const notes = document.getElementById('customerNotes').value.trim();
+    const total = currentProduct.price * quantity;
+
+    const whatsappNumber = "212663375051";
+
     // Format WhatsApp message
-    const message = `New Order Request:%0A%0A` +
-                    `*Product:* ${currentProduct.name}%0A` +
-                    `*Brand:* ${currentProduct.brand}%0A` +
-                    `*Price:* ${currentProduct.price} MAD%0A` +
-                    `*Quantity:* ${quantity}%0A%0A` +
-                    `*Customer Information:*%0A` +
-                    `Name: ${name}%0A` +
-                    `Phone: ${phone}%0A` +
-                    `Address: ${address}%0A` +
-                    `Notes: ${notes || 'None'}`;
-    
+    const message =
+      `🛒 *New Order Request*%0A%0A` +
+      `*Product:* ${currentProduct.name}%0A` +
+      `*Brand:* ${currentProduct.brand}%0A` +
+      `*Unit Price:* ${currentProduct.price} MAD%0A` +
+      `*Quantity:* ${quantity}%0A` +
+      `*Total:* ${total} MAD%0A%0A` +
+      `*Customer Info*%0A` +
+      `Name: ${name}%0A` +
+      `Phone: ${phone}%0A` +
+      `Address: ${address}%0A` +
+      `Notes: ${notes || 'None'}`;
+
     // Open WhatsApp with pre-filled message
-    window.open(`https://wa.me/?text=${message}`, '_blank');
-    
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+
     // Close modal
     modal.style.display = 'none';
-    
+
     // Reset form
     this.reset();
     document.getElementById('quantity').value = 1;
   });
+
 });

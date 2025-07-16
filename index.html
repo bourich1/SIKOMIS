@@ -1,731 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fitlife - Work Hard To Get Better Life</title>
 
-    <!-- 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitlife - Work Hard To Get Better Life</title>
+
+  <!-- 
     - favicon
   -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-    <!-- 
+  <!-- 
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!-- 
+  <!-- 
     - google font link
   -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet" />
 
-    <!-- 
+  <!-- 
     - fontawesome links
   -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- 
+  <!-- 
     - preload images
   -->
-    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
-    <link rel="preload" as="image" href="./assets/images/hero-circle-one.png" />
-    <link rel="preload" as="image" href="./assets/images/hero-circle-two.png" />
-    <link rel="preload" as="image" href="./assets/images/heart-rate.svg" />
-    <link rel="preload" as="image" href="./assets/images/calories.svg" />
-  </head>
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+  <link rel="preload" as="image" href="./assets/images/hero-circle-one.png" />
+  <link rel="preload" as="image" href="./assets/images/hero-circle-two.png" />
+  <link rel="preload" as="image" href="./assets/images/heart-rate.svg" />
+  <link rel="preload" as="image" href="./assets/images/calories.svg" />
+</head>
 
-  <body id="top">
-    <!-- 
+<body id="top">
+  <!-- 
     - #HEADER
   -->
 
-    <header class="header" data-header>
-      <div class="container">
-        <a href="#" class="logo">
-          <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
 
-          <span class="span">SIKOMISFIT</span>
-        </a>
+        <span class="span">SIKOMISFIT</span>
+      </a>
 
-        <nav class="navbar" data-navbar>
-          <button
-            class="nav-close-btn"
-            aria-label="close menu"
-            data-nav-toggler
-          >
-            <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
-          </button>
-
-          <ul class="navbar-list">
-            <li>
-              <a href="#home" class="navbar-link" data-nav-link>Home</a>
-            </li>
-
-            <li>
-              <a href="#class" class="navbar-link" data-nav-link>Plans</a>
-            </li>
-
-            <li>
-              <a href="#product" class="navbar-link" data-nav-link>Products</a>
-            </li>
-
-            <li>
-              <a href="about.html" class="navbar-link" data-nav-link>About Us</a>
-            </li>
-          </ul>
-        </nav>
-
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
         </button>
-      </div>
-    </header>
 
-    <main>
-      <article>
-        <!-- 
+        <ul class="navbar-list">
+          <li>
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="plans.html" class="navbar-link" data-nav-link>Plans</a>
+          </li>
+
+          <li>
+            <a href="products.html" class="navbar-link" data-nav-link>Products</a>
+          </li>
+
+          <li>
+            <a href="about.html" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- 
         - #HERO
       -->
 
-        <section
-          class="section hero bg-dark has-after has-bg-image"
-          id="home"
-          aria-label="hero"
-          data-section
-          style="background-image: url('./assets/images/hero-bg.png')"
-        >
-          <div class="container">
-            <div class="hero-content">
-              <p class="hero-subtitle">
-                <strong class="strong">The Best</strong>Fitness Coach
-              </p>
+      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
+        style="background-image: url('./assets/images/hero-bg.png')">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle">
+              <strong class="strong">The Best</strong>Fitness Coach
+            </p>
 
-              <h1 class="h1 hero-title">Work Hard To Get Better Life</h1>
+            <h1 class="h1 hero-title">Work Hard To Get Better Life</h1>
 
-              <p class="section-text">
-                Success doesn’t come from wishing it comes from working,
-                pushing, and showing up every single day.
-              </p>
+            <p class="section-text">
+              Success doesn’t come from wishing it comes from working,
+              pushing, and showing up every single day.
+            </p>
 
-              <a href="#" class="btn btn-primary">Get Started</a>
-            </div>
-
-            <div class="hero-banner">
-              <img
-                src="./assets/images/hero-banner.png"
-                width="660"
-                height="753"
-                alt="hero banner"
-                class="w-100"
-              />
-
-              <img
-                src="./assets/images/hero-circle-one.png"
-                width="666"
-                height="666"
-                aria-hidden="true"
-                alt=""
-                class="circle circle-1"
-              />
-              <img
-                src="./assets/images/hero-circle-two.png"
-                width="666"
-                height="666"
-                aria-hidden="true"
-                alt=""
-                class="circle circle-2"
-              />
-
-              <img
-                src="./assets/images/heart-rate.svg"
-                width="255"
-                height="270"
-                alt="heart rate"
-                class="abs-img abs-img-1"
-              />
-              <img
-                src="./assets/images/calories.svg"
-                width="348"
-                height="224"
-                alt="calories"
-                class="abs-img abs-img-2"
-              />
-            </div>
+            <a href="plans.html" class="btn btn-primary">Get Started</a>
           </div>
-        </section>
 
-        <!-- 
+          <div class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="660" height="753" alt="hero banner" class="w-100" />
+
+            <img src="./assets/images/hero-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-1" />
+            <img src="./assets/images/hero-circle-two.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-2" />
+
+            <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
+              class="abs-img abs-img-1" />
+            <img src="./assets/images/calories.svg" width="348" height="224" alt="calories" class="abs-img abs-img-2" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 
         - #ABOUT
       -->
 
-        <section class="section about" id="about" aria-label="about">
-          <div class="container">
-            <div class="about-banner has-after">
-              <img
-                src="./assets/images/about-banner.png"
-                width="690"
-                height="678"
-                loading="lazy"
-                alt="about banner"
-                class="w-100"
-              />
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+          <div class="about-banner has-after">
+            <img src="./assets/images/about-banner.png" width="690" height="678" loading="lazy" alt="about banner"
+              class="w-100" />
 
-              <img
-                src="./assets/images/about-circle-one.png"
-                width="660"
-                height="534"
-                loading="lazy"
-                aria-hidden="true"
-                alt=""
-                class="circle circle-1"
-              />
-              <img
-                src="./assets/images/about-circle-two.png"
-                width="660"
-                height="534"
-                loading="lazy"
-                aria-hidden="true"
-                alt=""
-                class="circle circle-2"
-              />
+            <img src="./assets/images/about-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-1" />
+            <img src="./assets/images/about-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-2" />
 
-              <img
-                src="./assets/images/fitness.png"
-                width="650"
-                height="154"
-                loading="lazy"
-                alt="fitness"
-                class="abs-img w-100"
-              />
-            </div>
+            <img src="./assets/images/fitness.png" width="650" height="154" loading="lazy" alt="fitness"
+              class="abs-img w-100" />
+          </div>
 
-            <div class="about-content">
-              <p class="section-subtitle">About Us</p>
+          <div class="about-content">
+            <p class="section-subtitle">About Us</p>
 
-              <h2 class="h2 section-title">Welcome To Our Fitness Gym</h2>
+            <h2 class="h2 section-title">Train with Purpose. Welcome to SIKOMISFIT Coaching.</h2>
 
-              <p class="section-text">
-                💪 Mohamed El Mouhajir – Certified Personal Trainer with 20+
-                Years of Experience Certified by IFBB/SIOSS, I support
-                individuals of all levels – from beginners to artists and
-                athletes – in their journey to build a strong, healthy, and
-                balanced body. My approach is science-based, combining training,
-                nutrition, and mental discipline. I've helped hundreds of
-                clients achieve lasting results over more than two decades.
-              </p>
+            <p class="section-text">
+              💪 Mohamed El Mouhajir – Certified Personal Trainer with 20+
+              Years of Experience Certified by IFBB/SIOSS, I support
+              individuals of all levels – from beginners to artists and
+              athletes – in their journey to build a strong, healthy, and
+              balanced body. My approach is science-based, combining training,
+              nutrition, and mental discipline. I've helped hundreds of
+              clients achieve lasting results over more than two decades.
+            </p>
 
-              <p class="section-text">
-                🎯 My vision: Real fitness isn't just about muscles… it's a
-                lifestyle and long-term commitment. 📍Based in Morocco –
-                In-person coaching & online training/nutrition programs
-                available worldwide
-              </p>
+            <p class="section-text">
+              🎯 My vision: Real fitness isn't just about muscles… it's a
+              lifestyle and long-term commitment. 📍Based in Morocco –
+              In-person coaching & online training/nutrition programs
+              available worldwide
+            </p>
 
-              <div class="wrapper">
-                <div class="about-coach">
-                  <figure class="coach-avatar">
-                    <img
-                      src="./assets/images/about-coach.jpg"
-                      width="65"
-                      height="65"
-                      loading="lazy"
-                      alt="Trainer"
-                    />
-                  </figure>
+            <div class="wrapper">
+              <div class="about-coach">
+                <figure class="coach-avatar">
+                  <img src="./assets/images/about-coach.jpg" width="65" height="65" loading="lazy" alt="Trainer" />
+                </figure>
 
-                  <div>
-                    <h3 class="coach-name">Mohammed Elmouhajir</h3>
+                <div>
+                  <h3 class="coach-name">Mohammed Elmouhajir</h3>
 
-                    <p class="coach-title">Coach</p>
-                  </div>
+                  <p class="coach-title">Coach</p>
                 </div>
-
-                <a href="#about" class="btn btn-primary">Explore More</a>
               </div>
+
+              <a href="#about" class="btn btn-primary">Explore More</a>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- 
+      <!-- 
         - #VIDEO
       -->
 
-        <section class="section video" aria-label="video">
-          <div class="container">
-            <div
-              class="video-card has-before has-bg-image"
-              style="background-image: url('./assets/images/video-banner.jpeg')"
-            >
-              <h2 class="h2 card-title">Explore Fitness Life</h2>
+      <section class="section video" aria-label="video">
+        <div class="container">
+          <div class="video-card has-before has-bg-image"
+            style="background-image: url('./assets/images/video-banner.jpeg')">
+            <h2 class="h2 card-title">Explore Fitness Life</h2>
 
-              <button class="play-btn" aria-label="play video">
-                <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
-              </button>
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
+            </button>
 
-              <a target="_blank"
-                href="https://www.instagram.com/sikomisfit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                class="btn-link has-before"
-                >Watch More</a
-              >
-            </div>
+            <a target="_blank"
+              href="https://www.instagram.com/sikomisfit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              class="btn-link has-before">Watch More</a>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- 
+      <!-- 
         - #CLASS
       -->
 
-        <section
-          class="section class bg-dark has-bg-image"
-          id="class"
-          aria-label="class"
-          style="background-image: url('./assets/images/classes-bg.png')"
-        >
-          <div class="container">
-            <p class="section-subtitle">Our Plans</p>
+      <section class="section class bg-dark has-bg-image" id="class" aria-label="class"
+        style="background-image: url('./assets/images/classes-bg.png')">
+        <div class="container">
+          <p class="section-subtitle">Our Plans</p>
 
-            <h2 class="h2 section-title text-center">
-              Fitness Plans For Every Goal
-            </h2>
+          <h2 class="h2 section-title text-center">
+            Fitness Plans For Every Goal
+          </h2>
 
-            <ul class="class-list has-scrollbar">
-              <li class="scrollbar-item">
-                <div class="class-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 416; --height: 240"
-                  >
-                    <img
-                      src="./assets/images/class-1.jpg"
-                      width="416"
-                      height="240"
-                      loading="lazy"
-                      alt="Weight Lifting"
-                      class="img-cover"
-                    />
-                  </figure>
+          <ul class="class-list has-scrollbar">
+            <li class="scrollbar-item">
+              <div class="class-card">
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240">
+                  <img src="./assets/images/class-1.jpg" width="416" height="240" loading="lazy" alt="Weight Lifting"
+                    class="img-cover" />
+                </figure>
 
-                  <div class="card-content">
-                    <div class="title-wrapper">
-                      <img
-                        src="./assets/images/class-icon-1.png"
-                        style="width: 52px !important; height: 52px !important"
-                        aria-hidden="true"
-                        alt=""
-                        class="title-icon"
-                      />
+                <div class="card-content">
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-1.png" style="width: 52px !important; height: 52px !important"
+                      aria-hidden="true" alt="" class="title-icon" />
 
-                      <h3 class="h3">
-                        <a href="#" class="card-title">Basic Pack</a>
-                      </h3>
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Basic Pack</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    • 🥗 Personalized nutrition plan <br />
+                    • 🏋️‍♂️ Training program <br />
+                    • 💊 Supplement guide <br />
+                    • 💵 Price: 900 Dh <br />
+                  </p>
+
+                  <div class="card-progress">
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+
+                      <span class="progress-value">60%</span>
                     </div>
 
-                    <p class="card-text">
-                      • 🥗 Personalized nutrition plan <br />
-                      • 🏋️‍♂️ Training program <br />
-                      • 💊 Supplement guide <br />
-                      • 💵 Price: 900 Dh <br />
-                    </p>
-
-                    <div class="card-progress">
-                      <div class="progress-wrapper">
-                        <p class="progress-label">Class Full</p>
-
-                        <span class="progress-value">60%</span>
-                      </div>
-
-                      <div class="progress-bg">
-                        <div class="progress-bar" style="width: 60%"></div>
-                      </div>
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 60%"></div>
                     </div>
                   </div>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li class="scrollbar-item">
-                <div class="class-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 416; --height: 240"
-                  >
-                    <img
-                      src="./assets/images/class-2.jpg"
-                      width="416"
-                      height="240"
-                      loading="lazy"
-                      alt="Cardio & Strenght"
-                      class="img-cover"
-                    />
-                  </figure>
+            <li class="scrollbar-item">
+              <div class="class-card">
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240">
+                  <img src="./assets/images/class-2.jpg" width="416" height="240" loading="lazy" alt="Cardio & Strenght"
+                    class="img-cover" />
+                </figure>
 
-                  <div class="card-content">
-                    <div class="title-wrapper">
-                      <img
-                        src="./assets/images/class-icon-2.png"
-                        style="width: 52px !important; height: 52px !important"
-                        aria-hidden="true"
-                        alt=""
-                        class="title-icon"
-                      />
+                <div class="card-content">
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-2.png" style="width: 52px !important; height: 52px !important"
+                      aria-hidden="true" alt="" class="title-icon" />
 
-                      <h3 class="h3">
-                        <a href="#" class="card-title">
-                          3‑Month Personalized Pack</a
-                        >
-                      </h3>
+                    <h3 class="h3">
+                      <a href="#" class="card-title">
+                        3‑Month Personalized Pack</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    • 🥗 Personalized nutrition plan <br />
+                    • 🏋️‍♂️ Training program <br />
+                    • 💊 Supplement guide <br />
+                    • 📅 Weekly follow‑up (12 weeks) <br />
+                    • 💵 Price: 1499 Dh – Full pack <br />
+                  </p>
+
+                  <div class="card-progress">
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+
+                      <span class="progress-value">75%</span>
                     </div>
 
-                    <p class="card-text">
-                      • 🥗 Personalized nutrition plan <br />
-                      • 🏋️‍♂️ Training program <br />
-                      • 💊 Supplement guide <br />
-                      • 📅 Weekly follow‑up (12 weeks) <br />
-                      • 💵 Price: 1499 Dh – Full pack <br />
-                    </p>
-
-                    <div class="card-progress">
-                      <div class="progress-wrapper">
-                        <p class="progress-label">Class Full</p>
-
-                        <span class="progress-value">75%</span>
-                      </div>
-
-                      <div class="progress-bg">
-                        <div class="progress-bar" style="width: 75%"></div>
-                      </div>
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 75%"></div>
                     </div>
                   </div>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li class="scrollbar-item">
-                <div class="class-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 416; --height: 240"
-                  >
-                    <img
-                      src="./assets/images/class-3.jpg"
-                      width="416"
-                      height="240"
-                      loading="lazy"
-                      alt="The Fitness Pack"
-                      class="img-cover"
-                    />
-                  </figure>
+            <li class="scrollbar-item">
+              <div class="class-card">
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240">
+                  <img src="./assets/images/class-3.jpg" width="416" height="240" loading="lazy" alt="The Fitness Pack"
+                    class="img-cover" />
+                </figure>
 
-                  <div class="card-content">
-                    <div class="title-wrapper">
-                      <img
-                        src="./assets/images/class-icon-3.png"
-                        aria-hidden="true"
-                        alt=""
-                        class="title-icon"
-                        style="width: 52px !important; height: 52px !important"
-                      />
+                <div class="card-content">
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-3.png" aria-hidden="true" alt="" class="title-icon"
+                      style="width: 52px !important; height: 52px !important" />
 
-                      <h3 class="h3">
-                        <a href="#" class="card-title"
-                          >6‑Month Personalized Pack</a
-                        >
-                      </h3>
+                    <h3 class="h3">
+                      <a href="#" class="card-title">6‑Month Personalized Pack</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    • 🥗 Personalized nutrition plan <br />
+                    • 🏋️‍♂️ Training program <br />
+                    • 💊 Supplement guide <br />
+                    • 📅 Weekly follow‑up (24 weeks) <br />
+                    • 💵 Price: 2499 Dh – Full pack <br />
+                  </p>
+
+                  <div class="card-progress">
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+
+                      <span class="progress-value">95%</span>
                     </div>
 
-                    <p class="card-text">
-                      • 🥗 Personalized nutrition plan <br />
-                      • 🏋️‍♂️ Training program <br />
-                      • 💊 Supplement guide <br />
-                      • 📅 Weekly follow‑up (24 weeks) <br />
-                      • 💵 Price: 2499 Dh – Full pack <br />
-                    </p>
-
-                    <div class="card-progress">
-                      <div class="progress-wrapper">
-                        <p class="progress-label">Class Full</p>
-
-                        <span class="progress-value">95%</span>
-                      </div>
-
-                      <div class="progress-bg">
-                        <div class="progress-bar" style="width: 95%"></div>
-                      </div>
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 95%"></div>
                     </div>
                   </div>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </section>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <!-- 
+      <!-- 
         - #product
       -->
 
-        <section class="section blog" id="product" aria-label="blog">
-          <div class="container">
-            <p class="section-subtitle">Our News</p>
-            <h2 class="h2 section-title text-center">Latest Products</h2>
+      <section class="section blog" id="product" aria-label="blog">
+        <div class="container">
+          <p class="section-subtitle">Our News</p>
+          <h2 class="h2 section-title text-center">Latest Products</h2>
 
-            <ul class="blog-list has-scrollbar" id="product-list"></ul>
-          </div>
-        </section>
-      </article>
-    </main>
+          <ul class="blog-list has-scrollbar" id="product-list"></ul>
+        </div>
+      </section>
+    </article>
+  </main>
 
-    <!-- model -->
-    <div id="productModal" class="modal">
-      <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <div class="modal-product-view">
-          <div class="modal-product-image">
-            <img id="modalProductImage" src="" alt="Product Image" />
-          </div>
-
-          <div class="modal-product-details">
-            <h2 id="modalProductName"></h2>
-            <div class="product-company" id="modalProductCompany"></div>
-
-            <div class="product-description" id="modalProductDescription"></div>
-
-            <div class="wishlist-toggle">
-              <input type="checkbox" id="wishlistCheckbox" />
-              <label for="wishlistCheckbox">Add to Wishlist</label>
-            </div>
-
-            <div class="quantity-selector">
-              <button class="quantity-btn minus">-</button>
-              <input
-                type="number"
-                id="quantity"
-                name="quantity"
-                min="1"
-                value="1"
-              />
-              <button class="quantity-btn plus">+</button>
-            </div>
-
-            <button class="buy-button">Buy Now</button>
-          </div>
+  <!-- model -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product-view">
+        <div class="modal-product-image">
+          <img id="modalProductImage" src="" alt="Product Image" />
         </div>
 
-        <!-- Order Form (hidden by default) -->
-        <div id="orderForm" class="order-form">
-          <h3>Complete Your Order</h3>
-          <form id="whatsappOrderForm">
-            <div class="form-group">
-              <label for="customerName">Full Name:</label>
-              <input type="text" id="customerName" required />
-            </div>
+        <div class="modal-product-details">
+          <h2 id="modalProductName"></h2>
+          <div class="product-company" id="modalProductCompany"></div>
 
-            <div class="form-group">
-              <label for="customerPhone">Phone Number:</label>
-              <input type="tel" id="customerPhone" required />
-            </div>
+          <div class="product-description" id="modalProductDescription"></div>
 
-            <div class="form-group">
-              <label for="customerAddress">Delivery Address:</label>
-              <textarea id="customerAddress" rows="3" required></textarea>
-            </div>
+          <div class="wishlist-toggle">
+            <input type="checkbox" id="wishlistCheckbox" />
+            <label for="wishlistCheckbox">Add to Wishlist</label>
+          </div>
 
-            <div class="form-group">
-              <label for="customerNotes">Additional Notes:</label>
-              <textarea id="customerNotes" rows="2"></textarea>
-            </div>
+          <div class="quantity-selector">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" />
+            <button class="quantity-btn plus">+</button>
+          </div>
 
-            <div class="form-actions">
-              <button type="button" class="cancel-order">Cancel</button>
-              <button type="submit" class="send-whatsapp">
-                Send via WhatsApp
-              </button>
-            </div>
-          </form>
+          <button class="buy-button">Buy Now</button>
         </div>
       </div>
-    </div>
 
-    <!-- 
+      <!-- Order Form (hidden by default) -->
+      <div id="orderForm" class="order-form">
+        <h3>Complete Your Order</h3>
+        <form id="whatsappOrderForm">
+          <div class="form-group">
+            <label for="customerName">Full Name:</label>
+            <input type="text" id="customerName" required />
+          </div>
+
+          <div class="form-group">
+            <label for="customerPhone">Phone Number:</label>
+            <input type="tel" id="customerPhone" required />
+          </div>
+
+          <div class="form-group">
+            <label for="customerAddress">Delivery Address:</label>
+            <textarea id="customerAddress" rows="3" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="customerNotes">Additional Notes:</label>
+            <textarea id="customerNotes" rows="2"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="cancel-order">Cancel</button>
+            <a class="whatsapp-button" href="#"
+              onclick="document.getElementById('whatsappOrderForm').dispatchEvent(new Event('submit'))">
+              <img src="whatsapp-icon.png" alt="WhatsApp" style="height:24px;" /> Send via WhatsApp
+            </a>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 
     - #FOOTER
   -->
 
-    <footer class="footer">
-      <div
-        class="section footer-top bg-dark has-bg-image"
-        style="background-image: url('./assets/images/footer-bg.png')"
-      >
-        <div class="container">
-          <div class="footer-brand">
-            <a href="index.html" class="logo">
-              <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+  <footer class="footer">
+    <div class="section footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
 
-              <span class="span">SIKOMISFIT</span>
-            </a>
+            <span class="span">SIKOMISFIT</span>
+          </a>
 
-            <p class="footer-brand-text">
-              💪 Mohamed El Mouhajir – IFBB/SIOSS-Certified Trainer with 20+
-              years of experience helping all levels build strength, health, and
-              balance. Offering in-person & online coaching programs rooted in
-              science, discipline, and sustainable results.
-            </p>
-          </div>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title has-before">Our Links</p>
-            </li>
-
-            <li>
-              <a href="#home" class="footer-link">Home</a>
-            </li>
-
-            <li>
-              <a href="#about" class="footer-link">About Us</a>
-            </li>
-
-            <li>
-              <a href="#class" class="footer-link">Plans</a>
-            </li>
-
-            <li>
-              <a href="#product" class="footer-link">Products</a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title has-before">Contact Us</p>
-            </li>
-
-            <li class="footer-list-item">
-              <div class="icon">
-                <ion-icon name="call" aria-hidden="true"></ion-icon>
-              </div>
-
-              <div>
-                <a href="tel:+212663375051" class="footer-link">0663375051</a>
-
-                <a href="tel:+212663375051" class="footer-link"
-                  >+212 663 375 051</a
-                >
-              </div>
-            </li>
-
-            <li class="footer-list-item">
-              <div class="icon">
-                <ion-icon name="mail" aria-hidden="true"></ion-icon>
-              </div>
-
-              <div>
-                <a href="mailto:sikomisss@gmail.com" class="footer-link"
-                  >sikomisss@gmail.com</a
-                >
-              </div>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title has-before">Our Newsletter</p>
-            </li>
-            <li>
-              <ul class="social-list">
-                <li>
-                  <a
-                    href="https://www.facebook.com/sikomisfit"
-                    class="social-link"
-                  >
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="https://www.instagram.com/sikomisfit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                    class="social-link"
-                  >
-                    <ion-icon name="logo-instagram"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="https://wa.me/212663375051" class="social-link">
-                    <ion-icon name="logo-whatsapp"></ion-icon>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="container">
-          <p class="copyright">
-            &copy; 2022 SIKOMIS. All Rights Reserved By
-            <a href="tel:+212647262361" class="copyright-link"
-              >bourich anouar.</a
-            >
+          <p class="footer-brand-text">
+            💪 Mohamed El Mouhajir – IFBB/SIOSS-Certified Trainer with 20+
+            years of experience helping all levels build strength, health, and
+            balance. Offering in-person & online coaching programs rooted in
+            science, discipline, and sustainable results.
           </p>
-
-          <ul class="footer-bottom-list">
-            <li>
-              <a href="#" class="footer-bottom-link has-before"
-                >Privacy Policy</a
-              >
-            </li>
-
-            <li>
-              <a href="#" class="footer-bottom-link has-before"
-                >Terms & Condition</a
-              >
-            </li>
-          </ul>
         </div>
-      </div>
-    </footer>
 
-    <!-- 
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title has-before">Our Links</p>
+          </li>
+
+          <li>
+            <a href="#home" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#class" class="footer-link">Plans</a>
+          </li>
+
+          <li>
+            <a href="#product" class="footer-link">Products</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title has-before">Contact Us</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:+212663375051" class="footer-link">0663375051</a>
+
+              <a href="tel:+212663375051" class="footer-link">+212 663 375 051</a>
+            </div>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:sikomisss@gmail.com" class="footer-link">sikomisss@gmail.com</a>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title has-before">Our Newsletter</p>
+          </li>
+          <li>
+            <ul class="social-list">
+              <li>
+                <a href="https://www.facebook.com/sikomisfit" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/sikomisfit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://wa.me/212663375051" class="social-link">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2022 SIKOMIS. All Rights Reserved By
+          <a href="tel:+212647262361" class="copyright-link">bourich anouar.</a>
+        </p>
+
+        <ul class="footer-bottom-list">
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Terms & Condition</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 
     - #BACK TO TOP
   -->
 
-    <a
-      href="#top"
-      class="back-top-btn"
-      aria-label="back to top"
-      data-back-top-btn
-    >
-      <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
-    </a>
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
 
-    <!-- 
+  <!-- 
     - custom js link
   -->
-    <script src="./assets/js/script.js" defer></script>
+  <script src="./assets/js/script.js" defer></script>
 
-    <!-- 
+  <!-- 
     - ionicon link
   -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

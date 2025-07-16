@@ -729,6 +729,7 @@ body {
 .blog .section-subtitle { margin-inline: auto; }
 
 .product-card {
+      cursor: pointer;
       background-color: #fff;
       width: 300px;
       border: 1px solid #ddd;
@@ -873,7 +874,7 @@ body {
 }
 
 .buy-button {
-  background: #4CAF50;
+  background: #f4ce14;
   color: white;
   padding: 12px 25px;
   border: none;
@@ -885,7 +886,7 @@ body {
 }
 
 .buy-button:hover {
-  background: #45a049;
+  background: #d3b000d2;
 }
 
 /* Order Form Styles */

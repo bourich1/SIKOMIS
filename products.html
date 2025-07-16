@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitlife - Work Hard To Get Better Life</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- 
+    - fontawesome links
+  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-circle-one.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-circle-two.png" />
+    <link rel="preload" as="image" href="./assets/images/heart-rate.svg" />
+    <link rel="preload" as="image" href="./assets/images/calories.svg" />
+
+    <!-- style -->
+
+    <style>
+        .header {
+            background-color: black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding-block: 10px;
+            box-shadow: var(--shadow-1);
+            z-index: 4;
+        }
+
+        .has-scrollbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            overflow: visible;
+            padding-block-end: 30px;
+            scroll-snap-type: none;
+            justify-content: center;
+        }
+        
+
+        @media (max-width: 768px) {
+            .span{
+                color: white;
+            }
+            .has-scrollbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .scrollbar-item {
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+            <a href="#" class="logo">
+                <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+                <span class="span">SIKOMISFIT</span>
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+                </button>
+
+                <ul class="navbar-list">
+                    <li>
+                        <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li>
+                        <a href="plans.html" class="navbar-link" data-nav-link>Plans</a>
+                    </li>
+
+                    <li>
+                        <a href="products.html" class="navbar-link" data-nav-link>Products</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="navbar-link" data-nav-link>About Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 
+        - #product
+      -->
+
+    <section class="section blog" id="product" aria-label="blog">
+        <div class="container">
+            <p class="section-subtitle">Our News</p>
+            <h2 class="h2 section-title text-center">Latest Products</h2>
+
+            <ul class="blog-list has-scrollbar" id="product-list"></ul>
+        </div>
+    </section>
+    </article>
+    </main>
+
+    <!-- model -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-product-view">
+                <div class="modal-product-image">
+                    <img id="modalProductImage" src="" alt="Product Image" />
+                </div>
+
+                <div class="modal-product-details">
+                    <h2 id="modalProductName"></h2>
+                    <div class="product-company" id="modalProductCompany"></div>
+
+                    <div class="product-description" id="modalProductDescription"></div>
+
+                    <div class="wishlist-toggle">
+                        <input type="checkbox" id="wishlistCheckbox" />
+                        <label for="wishlistCheckbox">Add to Wishlist</label>
+                    </div>
+
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" />
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+
+                    <button class="buy-button">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Order Form (hidden by default) -->
+            <div id="orderForm" class="order-form">
+                <h3>Complete Your Order</h3>
+                <form id="whatsappOrderForm">
+                    <div class="form-group">
+                        <label for="customerName">Full Name:</label>
+                        <input type="text" id="customerName" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerPhone">Phone Number:</label>
+                        <input type="tel" id="customerPhone" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerAddress">Delivery Address:</label>
+                        <textarea id="customerAddress" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerNotes">Additional Notes:</label>
+                        <textarea id="customerNotes" rows="2"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="cancel-order">Cancel</button>
+                        <button type="submit" class="send-whatsapp">
+                            Send via WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+        <div class="section footer-top bg-dark has-bg-image"
+            style="background-image: url('./assets/images/footer-bg.png')">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+                        <span class="span">SIKOMISFIT</span>
+                    </a>
+
+                    <p class="footer-brand-text">
+                        💪 Mohamed El Mouhajir – IFBB/SIOSS-Certified Trainer with 20+
+                        years of experience helping all levels build strength, health, and
+                        balance. Offering in-person & online coaching programs rooted in
+                        science, discipline, and sustainable results.
+                    </p>
+                </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title has-before">Our Links</p>
+                    </li>
+
+                    <li>
+                        <a href="#home" class="footer-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="footer-link">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#class" class="footer-link">Plans</a>
+                    </li>
+
+                    <li>
+                        <a href="#product" class="footer-link">Products</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title has-before">Contact Us</p>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <div class="icon">
+                            <ion-icon name="call" aria-hidden="true"></ion-icon>
+                        </div>
+
+                        <div>
+                            <a href="tel:+212663375051" class="footer-link">0663375051</a>
+
+                            <a href="tel:+212663375051" class="footer-link">+212 663 375 051</a>
+                        </div>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <div class="icon">
+                            <ion-icon name="mail" aria-hidden="true"></ion-icon>
+                        </div>
+
+                        <div>
+                            <a href="mailto:sikomisss@gmail.com" class="footer-link">sikomisss@gmail.com</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title has-before">Our Newsletter</p>
+                    </li>
+                    <li>
+                        <ul class="social-list">
+                            <li>
+                                <a href="https://www.facebook.com/sikomisfit" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/sikomisfit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                    class="social-link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://wa.me/212663375051" class="social-link">
+                                    <ion-icon name="logo-whatsapp"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    &copy; 2022 SIKOMIS. All Rights Reserved By
+                    <a href="tel:+212647262361" class="copyright-link">bourich anouar.</a>
+                </p>
+
+                <ul class="footer-bottom-list">
+                    <li>
+                        <a href="#" class="footer-bottom-link has-before">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-bottom-link has-before">Terms & Condition</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
