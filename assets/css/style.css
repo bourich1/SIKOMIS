@@ -575,7 +575,8 @@ body {
 }
 
 .about .coach-name {
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-500);
+  font-size: 15px;
   margin-block-end: 5px;
 }
 

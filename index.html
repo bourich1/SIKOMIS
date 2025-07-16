@@ -177,9 +177,9 @@
           <div class="container">
             <div class="about-banner has-after">
               <img
-                src="./assets/images/about-banner.png"
-                width="660"
-                height="648"
+                src="./assets/images/hero-banner.png"
+                width="690"
+                height="678"
                 loading="lazy"
                 alt="about banner"
                 class="w-100"
@@ -220,15 +220,17 @@
               <h2 class="h2 section-title">Welcome To Our Fitness Gym</h2>
 
               <p class="section-text">
-                Nam ut hendrerit leo. Aenean vel ipsum nunc. Curabitur in tellus
-                vitae nisi aliquet dapibus non et erat. Pellentesque porta
-                sapien non accumsan dignissim curabitur sagittis nulla sit amet
-                dolor feugiat.
+                💪 SIKOMIS – Where determination turns into muscle! At SIKOMIS,
+                we offer high-level training programs focused on weightlifting
+                and muscle building, crafted to help you break your limits and
+                reach your full physical potential. 
               </p>
 
               <p class="section-text">
-                Integer placerat vitae metus posuere tincidunt. Nullam suscipit
-                ante ac aliquet viverra vestibulum ante ipsum primis.
+                Whether you're a beginner or
+                an experienced athlete, you’ll train like a champion—with a
+                structured plan, balanced nutrition, and guidance from expert
+                coaches who know what it takes to succeed.
               </p>
 
               <div class="wrapper">
@@ -244,13 +246,13 @@
                   </figure>
 
                   <div>
-                    <h3 class="h3 coach-name">Denis Robinson</h3>
+                    <h3 class="coach-name">Mohammed Elmouhajir</h3>
 
-                    <p class="coach-title">Our Coach</p>
+                    <p class="coach-title">Coach</p>
                   </div>
                 </div>
 
-                <a href="#" class="btn btn-primary">Explore More</a>
+                <a href="#class" class="btn btn-primary">Explore</a>
               </div>
             </div>
           </div>
@@ -315,7 +317,7 @@
                     <div class="title-wrapper">
                       <img
                         src="./assets/images/class-icon-1.png"
-                        style="width: 52px !important; height: 52px !important;"
+                        style="width: 52px !important; height: 52px !important"
                         aria-hidden="true"
                         alt=""
                         class="title-icon"
@@ -368,7 +370,7 @@
                     <div class="title-wrapper">
                       <img
                         src="./assets/images/class-icon-2.png"
-                        style="width: 52px !important; height: 52px !important;"
+                        style="width: 52px !important; height: 52px !important"
                         aria-hidden="true"
                         alt=""
                         class="title-icon"
@@ -427,7 +429,7 @@
                         aria-hidden="true"
                         alt=""
                         class="title-icon"
-                        style="width: 52px !important; height: 52px !important;"
+                        style="width: 52px !important; height: 52px !important"
                       />
 
                       <h3 class="h3">
@@ -470,79 +472,84 @@
         <section class="section blog" id="product" aria-label="blog">
           <div class="container">
             <p class="section-subtitle">Our News</p>
-            <h2 class="h2 section-title text-center">Latest Products </h2>
-        
-            <ul class="blog-list has-scrollbar" id="product-list">
-              
-            </ul>
+            <h2 class="h2 section-title text-center">Latest Products</h2>
+
+            <ul class="blog-list has-scrollbar" id="product-list"></ul>
           </div>
         </section>
-        </article>
-        </main>
+      </article>
+    </main>
 
+    <!-- model -->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product-view">
+          <div class="modal-product-image">
+            <img id="modalProductImage" src="" alt="Product Image" />
+          </div>
 
-        <!-- model -->
-        <div id="productModal" class="modal">
-  <div class="modal-content">
-    <span class="close-modal">&times;</span>
-    <div class="modal-product-view">
-      <div class="modal-product-image">
-        <img id="modalProductImage" src="" alt="Product Image">
-      </div>
-      
-      <div class="modal-product-details">
-        <h2 id="modalProductName"></h2>
-        <div class="product-company" id="modalProductCompany"></div>
-        
-        <div class="product-description" id="modalProductDescription"></div>
-        
-        <div class="wishlist-toggle">
-          <input type="checkbox" id="wishlistCheckbox">
-          <label for="wishlistCheckbox">Add to Wishlist</label>
+          <div class="modal-product-details">
+            <h2 id="modalProductName"></h2>
+            <div class="product-company" id="modalProductCompany"></div>
+
+            <div class="product-description" id="modalProductDescription"></div>
+
+            <div class="wishlist-toggle">
+              <input type="checkbox" id="wishlistCheckbox" />
+              <label for="wishlistCheckbox">Add to Wishlist</label>
+            </div>
+
+            <div class="quantity-selector">
+              <button class="quantity-btn minus">-</button>
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                value="1"
+              />
+              <button class="quantity-btn plus">+</button>
+            </div>
+
+            <button class="buy-button">Buy Now</button>
+          </div>
         </div>
-        
-        <div class="quantity-selector">
-          <button class="quantity-btn minus">-</button>
-          <input type="number" id="quantity" name="quantity" min="1" value="1">
-          <button class="quantity-btn plus">+</button>
+
+        <!-- Order Form (hidden by default) -->
+        <div id="orderForm" class="order-form">
+          <h3>Complete Your Order</h3>
+          <form id="whatsappOrderForm">
+            <div class="form-group">
+              <label for="customerName">Full Name:</label>
+              <input type="text" id="customerName" required />
+            </div>
+
+            <div class="form-group">
+              <label for="customerPhone">Phone Number:</label>
+              <input type="tel" id="customerPhone" required />
+            </div>
+
+            <div class="form-group">
+              <label for="customerAddress">Delivery Address:</label>
+              <textarea id="customerAddress" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="customerNotes">Additional Notes:</label>
+              <textarea id="customerNotes" rows="2"></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="cancel-order">Cancel</button>
+              <button type="submit" class="send-whatsapp">
+                Send via WhatsApp
+              </button>
+            </div>
+          </form>
         </div>
-        
-        <button class="buy-button">Buy Now</button>
       </div>
     </div>
-    
-    <!-- Order Form (hidden by default) -->
-    <div id="orderForm" class="order-form">
-      <h3>Complete Your Order</h3>
-      <form id="whatsappOrderForm">
-        <div class="form-group">
-          <label for="customerName">Full Name:</label>
-          <input type="text" id="customerName" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="customerPhone">Phone Number:</label>
-          <input type="tel" id="customerPhone" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="customerAddress">Delivery Address:</label>
-          <textarea id="customerAddress" rows="3" required></textarea>
-        </div>
-        
-        <div class="form-group">
-          <label for="customerNotes">Additional Notes:</label>
-          <textarea id="customerNotes" rows="2"></textarea>
-        </div>
-        
-        <div class="form-actions">
-          <button type="button" class="cancel-order">Cancel</button>
-          <button type="submit" class="send-whatsapp">Send via WhatsApp</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
 
     <!-- 
     - #FOOTER
@@ -555,39 +562,17 @@
       >
         <div class="container">
           <div class="footer-brand">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
               <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
 
-              <span class="span">Fitlife</span>
+              <span class="span">SIKOMIS</span>
             </a>
 
             <p class="footer-brand-text">
-              Etiam suscipit fringilla ullamcorper sed malesuada urna nec odio.
+              SIKOMIS is a specialized fitness program for weightlifting and muscle building, delivering expert training to build strength, discipline, and lasting results.
             </p>
 
-            <div class="wrapper">
-              <img
-                src="./assets/images/footer-clock.png"
-                width="34"
-                height="34"
-                loading="lazy"
-                alt="Clock"
-              />
-
-              <ul class="footer-brand-list">
-                <li>
-                  <p class="footer-brand-title">Monday - Friday</p>
-
-                  <p>7:00Am - 10:00Pm</p>
-                </li>
-
-                <li>
-                  <p class="footer-brand-title">Saturday - Sunday</p>
-
-                  <p>7:00Am - 2:00Pm</p>
-                </li>
-              </ul>
-            </div>
+            
           </div>
 
           <ul class="footer-list">
@@ -596,23 +581,19 @@
             </li>
 
             <li>
-              <a href="#" class="footer-link">Home</a>
+              <a href="#home" class="footer-link">Home</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link">About Us</a>
+              <a href="#about" class="footer-link">About Us</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link">Classes</a>
+              <a href="#class" class="footer-link">Plans</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link">Blog</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Contact Us</a>
+              <a href="#product" class="footer-link">Products</a>
             </li>
           </ul>
 
@@ -637,10 +618,10 @@
               </div>
 
               <div>
-                <a href="tel:18001213637" class="footer-link">1800-121-3637</a>
+                <a href="tel:+212663375051" class="footer-link">0663375051</a>
 
-                <a href="tel:+915552348765" class="footer-link"
-                  >+91 555 234-8765</a
+                <a href="tel:+212663375051" class="footer-link"
+                  >+212 663 375 051</a
                 >
               </div>
             </li>
@@ -651,12 +632,8 @@
               </div>
 
               <div>
-                <a href="mailto:info@fitlife.com" class="footer-link"
-                  >info@fitlife.com</a
-                >
-
-                <a href="mailto:services@fitlife.com" class="footer-link"
-                  >services@fitlife.com</a
+                <a href="mailto:sikomisss@gmail.com" class="footer-link"
+                  >sikomisss@gmail.com</a
                 >
               </div>
             </li>
@@ -666,31 +643,6 @@
             <li>
               <p class="footer-list-title has-before">Our Newsletter</p>
             </li>
-
-            <li>
-              <form action="" class="footer-form">
-                <input
-                  type="email"
-                  name="email_address"
-                  aria-label="email"
-                  placeholder="Email Address"
-                  required
-                  class="input-field"
-                />
-
-                <button
-                  type="submit"
-                  class="btn btn-primary"
-                  aria-label="Submit"
-                >
-                  <ion-icon
-                    name="chevron-forward-sharp"
-                    aria-hidden="true"
-                  ></ion-icon>
-                </button>
-              </form>
-            </li>
-
             <li>
               <ul class="social-list">
                 <li>
@@ -719,8 +671,8 @@
       <div class="footer-bottom">
         <div class="container">
           <p class="copyright">
-            &copy; 2022 Fitlife. All Rights Reserved By
-            <a href="#" class="copyright-link">codewithsadee.</a>
+            &copy; 2022 SIKOMIS. All Rights Reserved By
+            <a href="tel:+212647262361" class="copyright-link">bourich anouar.</a>
           </p>
 
           <ul class="footer-bottom-list">
