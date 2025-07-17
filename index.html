@@ -33,6 +33,9 @@
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- link library AOS -->
+       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- 
     - preload images
   -->
@@ -97,7 +100,7 @@
       <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
         style="background-image: url('./assets/images/hero-bg.png')">
         <div class="container">
-          <div class="hero-content">
+          <div class="hero-content" data-aos="fade-right">
             <p class="hero-subtitle">
               <strong class="strong">The Best</strong>Fitness Coach
             </p>
@@ -112,7 +115,7 @@
             <a href="plans.html" class="btn btn-primary">Get Started</a>
           </div>
 
-          <div class="hero-banner">
+          <div class="hero-banner" data-aos="fade-left">
             <img src="./assets/images/hero-banner.png" width="660" height="753" alt="hero banner" class="w-100" />
 
             <img src="./assets/images/hero-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
@@ -133,7 +136,7 @@
 
       <section class="section about" id="about" aria-label="about">
         <div class="container">
-          <div class="about-banner has-after">
+          <div class="about-banner has-after" data-aos="fade-right">
             <img src="./assets/images/about-banner.png" width="690" height="678" loading="lazy" alt="about banner"
               class="w-100" />
 
@@ -146,7 +149,7 @@
               class="abs-img w-100" />
           </div>
 
-          <div class="about-content">
+          <div class="about-content" data-aos="fade-left">
             <p class="section-subtitle">About Us</p>
 
             <h2 class="h2 section-title">Train with Purpose. Welcome to SIKOMISFIT Coaching.</h2>
@@ -191,7 +194,7 @@
         - #VIDEO
       -->
 
-      <section class="section video" aria-label="video">
+      <section class="section video" aria-label="video" data-aos="flip-up">
         <div class="container">
           <div class="video-card has-before has-bg-image"
             style="background-image: url('./assets/images/video-banner.jpeg')">
@@ -215,14 +218,14 @@
       <section class="section class bg-dark has-bg-image" id="class" aria-label="class"
         style="background-image: url('./assets/images/classes-bg.png')">
         <div class="container">
-          <p class="section-subtitle">Our Plans</p>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-duration="1000">Our Plans</p>
 
-          <h2 class="h2 section-title text-center">
+          <h2 class="h2 section-title text-center" data-aos="fade-up" data-aos-duration="800">
             Fitness Plans For Every Goal
           </h2>
 
           <ul class="class-list has-scrollbar">
-            <li class="scrollbar-item" id="plan1" data-plan="Basic Pack">
+            <li class="scrollbar-item" id="plan1" data-plan="Basic Pack" data-aos="fade-up" data-aos-duration="800">
               <div class="class-card">
                 <figure class="card-banner img-holder" style="--width: 416; --height: 240">
                   <img src="./assets/images/class-1.jpg" width="416" height="240" loading="lazy" alt="Weight Lifting"
@@ -264,7 +267,7 @@
               </div>
             </li>
 
-            <li class="scrollbar-item" id="plan2" data-plan="3‑Month Personalized Pack">
+            <li class="scrollbar-item" id="plan2" data-plan="3‑Month Personalized Pack" data-aos="fade-up" data-aos-duration="800">
               <div class="class-card">
                 <figure class="card-banner img-holder" style="--width: 416; --height: 240">
                   <img src="./assets/images/class-2.jpg" width="416" height="240" loading="lazy" alt="Cardio & Strenght"
@@ -308,7 +311,7 @@
               </div>
             </li>
 
-            <li class="scrollbar-item" id="plan3" data-plan="6‑Month Personalized Pack">
+            <li class="scrollbar-item" id="plan3" data-plan="6‑Month Personalized Pack" data-aos="fade-up" data-aos-duration="800">
               <div class="class-card">
                 <figure class="card-banner img-holder" style="--width: 416; --height: 240">
                   <img src="./assets/images/class-3.jpg" width="416" height="240" loading="lazy" alt="The Fitness Pack"
@@ -358,7 +361,7 @@
         - #product
       -->
 
-      <section class="section blog" id="product" aria-label="blog">
+      <section class="section blog" id="product" aria-label="blog" data-aos="fade-up" data-aos-duration="1200">
         <div class="container">
           <p class="section-subtitle">Our News</p>
           <h2 class="h2 section-title text-center">Latest Products</h2>
@@ -440,7 +443,7 @@
     - #FOOTER
   -->
 
-  <footer class="footer">
+  <footer class="footer" data-aos="fade-up">
     <div class="section footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
       <div class="container">
         <div class="footer-brand">
@@ -576,6 +579,13 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- link library AOS -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>
