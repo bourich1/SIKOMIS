@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-let btnsPlan = document.querySelectorAll("#btn-plan");
+let btnsPlan = document.querySelectorAll(".btn-plan");
       btnsPlan.forEach((btn) => {
         btn.addEventListener("click", (event) => {
           const cardPlan = event.target.closest(".scrollbar-item");
