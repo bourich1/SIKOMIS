@@ -717,8 +717,31 @@ body {
   height: 10px;
   border-radius: inherit;
 }
+.btn-plans{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.btn-plans button {
+  width: 100%;
+  padding: 10px 0;
+  font-weight: 500;
+  border: 2px solid #F4CE14;
+  border-radius: 5px;
+  color: var(--rich-black-fogra-29-2);
+  background: linear-gradient(to right, #F4CE14 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all 0.6s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
 
-
+.btn-plans button:hover {
+  background-position: left;
+  color: white;
+}
 
 
 

@@ -193,7 +193,7 @@ products.forEach((product) => {
                 </div>
               </li>`
   
-  producList.innerHTML += productItem;
+        producList.innerHTML += productItem;
               
 });
 
@@ -303,3 +303,18 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 });
+
+
+let btnsPlan = document.querySelectorAll("#btn-plan");
+      btnsPlan.forEach((btn) => {
+        btn.addEventListener("click", (event) => {
+          const cardPlan = event.target.closest(".scrollbar-item");
+          const plan = cardPlan.getAttribute("data-plan");
+          
+          const phoneNumber = "212663375051";
+          const message = `HELLO, I would like to subscribe to the ${plan}. Please contact me for further details.`;
+          const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+          window.open(whatsappUrl, "_blank");
+        });
+      });
+
