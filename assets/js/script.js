@@ -109,14 +109,7 @@ let products = [
       "Critical Mass ™ est tout simplement le supplément de gain de masse préféré et fiable du Royaume-Uni. Il utilise des ingrédients de la plus haute qualité, qui ont tous été soigneusement sélectionnés pour leur capacité à fournir des GAINS DE MASSE MAIGRE de qualité vous permettant d’accumuler les calories pour votre compte quotidien. Notre formulation de masse maigre contient 42 g de protéines à digestion rapide et lente par portion, y compris l’isolat de protéines de lactosérum ISO-XP™.",
     image: "assets/images/PRODUCT/fraiseet6-kg.jpg",
   },
-  {
-    name: "Applied Nutrition, CRITICAL MASS PROFESSIONAL, Gainer de Qualité, Chocolatet6 kg",
-    brand: "Applied Nutrition",
-    price: 899.0,
-    description:
-      "Critical Mass ™ est tout simplement le supplément de gain de masse préféré et fiable du Royaume-Uni. Il utilise des ingrédients de la plus haute qualité, qui ont tous été soigneusement sélectionnés pour leur capacité à fournir des GAINS DE MASSE MAIGRE de qualité vous permettant d’accumuler les calories pour votre compte quotidien. Notre formulation de masse maigre contient 42 g de protéines à digestion rapide et lente par portion, y compris l’isolat de protéines de lactosérum ISO-XP™.",
-    image: "assets/images/PRODUCT/Chocolatet6-kg.jpg",
-  },
+
   {
     name: "Applied Nutrition, CRITICAL MASS PROFESSIONAL, Gainer de Qualité, Bananeet6 kg",
     brand: "Applied Nutrition",
