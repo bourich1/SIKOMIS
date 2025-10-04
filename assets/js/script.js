@@ -54,6 +54,7 @@ window.addEventListener("scroll", function () {
 // ===================== store =======================
 let products = [
   {
+    id: 1,
     name: "Critical Whey Protein 2kg, Applied Nutrition Fraise",
     brand: "Applied Nutrition",
     price: 849.0,
@@ -62,6 +63,7 @@ let products = [
     image: "assets/images/PRODUCT/Nutrition-Fraise.jpg",
   },
   {
+    id: 2,
     name: "Critical Whey Protein 2kg, Applied Nutrition Chocolat",
     brand: "Applied Nutrition",
     price: 849.0,
@@ -70,6 +72,7 @@ let products = [
     image: "assets/images/PRODUCT/Nutrition-Chocolat.jpg",
   },
   {
+    id: 3,
     name: "Critical Whey Protein 2kg, Applied Nutrition Vanille",
     brand: "Applied Nutrition",
     price: 849.0,
@@ -78,6 +81,7 @@ let products = [
     image: "assets/images/PRODUCT/Nutrition-Vanille.jpg",
   },
   {
+    id: 4,
     name: "Critical Whey Protein 2kg, Applied Nutrition Cheescake",
     brand: "Applied Nutrition",
     price: 849.0,
@@ -86,23 +90,16 @@ let products = [
     image: "assets/images/PRODUCT/Nutrition-Cheescake.jpg",
   },
   {
+    id: 5,
     name: "Applied Nutrition, ISO XP, Isolat de Protéine Pure 1,8kg Chocolat Dessert",
     brand: "Applied Nutrition",
     price: 849.0,
     description:
       "ISO-XP is a high-quality whey protein isolate with 90% protein, low sugar, carbs, and fat, and soy-free. Each 1.8 kg pack provides 72 servings, easy to mix with water or skim milk. It’s perfect for quickly boosting daily protein intake, especially after waking up. You can add it to oats, cereals, or use it in baking for extra protein. Made from milk of European grass-fed cows.",
     image: "assets/images/PRODUCT/Chocolat-Dessert.jpg",
-  },
-  // {
-  //   name: "Applied Nutrition, ABE, ALL BLACK EVERYTHING Booster, Pre-workout, 30 doses Fruit Punch",
-  //   brand: "Applied Nutrition",
-  //   price: 450.0,
-  //   description:
-  //     "ABE – Applied Nutrition est un pré-entraînement extrêmement puissant qui vous procurera une énergie maximale ainsi qu’une congestion musculaire exceptionnelle. ABE augmente instantanément et de manière significative la force et la puissance musculaire. De plus, il favorisera une concentration extrême pour rester pleinement concentré lors de vos séances d’entraînement. Attention, il est crucial de ne jamais dépasser la dose recommandée de 10,5g.",
-  //   image: "assets/images/PRODUCT/Fruit-Punch.jpg",
-  // },
-  
+  },  
   {
+    id: 6,
     name: "Applied Nutrition, CRITICAL MASS PROFESSIONAL, Gainer de Qualité, Bananeet6 kg",
     brand: "Applied Nutrition",
     price: 899.0,
@@ -111,6 +108,7 @@ let products = [
     image: "assets/images/PRODUCT/Bananeet6-kg.jpg",
   },
   {
+    id: 7,
     name: "Applied Nutrition ORIGINAL FORMULA CRITICAL MASS 6KG Chocolat",
     brand: "Applied Nutrition",
     price: 850.0,
@@ -119,6 +117,7 @@ let products = [
     image: "assets/images/PRODUCT/MASS-6KG-Chocolat.jpg",
   },
   {
+    id: 8,
     name: "Applied Nutrition ORIGINAL FORMULA CRITICAL MASS 6KG Cookies And Cream",
     brand: "Applied Nutrition",
     price: 850.0,
@@ -127,6 +126,7 @@ let products = [
     image: "assets/images/PRODUCT/MASS-6KG-Cookies-And-Cream.jpg",
   },
   {
+    id: 9,
     name: "Applied Nutrition, ABE, ALL BLACK EVERYTHING Booster, Pre-workout, 30 doses Bubble Gum",
     brand: "Applied Nutrition",
     price: 450.0,
@@ -135,6 +135,7 @@ let products = [
     image: "assets/images/PRODUCT/Bubble-Gum.jpg",
   },
   {
+    id: 10,
     name: "Wawan Nutrition, Pre-Workout, Camel, 600g, Tang Mango",
     brand: "Applied Nutrition",
     price: 449.0,
@@ -142,6 +143,7 @@ let products = [
     image: "assets/images/PRODUCT/Tang-Mango.jpg",
   },
   {
+    id: 11,
     name: "GAT SPORT, NITRAFLEX, PRE WORKOUT 30 SERVINGS, WATERMELON",
     brand: "Applied Nutrition",
     price: 449.0,
@@ -150,6 +152,7 @@ let products = [
     image: "assets/images/PRODUCT/WATERMELON.jpg",
   },
   {
+    id: 12,
     name: "DIET WHEY PROTEIN 1 KG , APPLIED NUTRITION Strawberry Milkshake",
     brand: "Applied Nutrition",
     price: 480.0,
@@ -164,7 +167,7 @@ let producList = document.getElementById("product-list");
 
 products.forEach((product) => {
   let productItem = `<li class="scrollbar-item">
-                <div class="product-card">
+                <div class="product-card" data-product-id="${product.id}">
                   <img src=${product.image} />
                   <div class="product-info">
                     <div class="product-category">
@@ -182,7 +185,52 @@ products.forEach((product) => {
               
 });
 
+let prudact2 = [
+  {
+    id: 13,
+    name: "Bandes strap",
+    description: "2 Bandes strap pour deadlift ( FAFA )",
+    price: 75.0,
+    image: "assets/images/prudact-2/Weight-Lifting.jpg",
+  },
+  {
+    id: 14,
+    name: "Bandes Protege Genoux ",
+    description: "2 Bandes Protege Genoux Large elastique pour musculation- PAKKA (Noir - Gris - Orange - Rouge - Vert)",
+    price: 90.0,
+    image: "assets/images/prudact-2/Vortex-Foosball.jpg", 
+  },
+  {
+    id: 15,
+    name: "Bandes protege poignets ",
+    description: "2 bandes protege poignets Avec strap pour musculation (FAFA)",
+    price: 90.0,
+    image: "assets/images/prudact-2/MKAS-Weight-lifting.jpg",
+  }
+];
+let producListTow = document.getElementById("product-list-tow");
 
+prudact2.forEach((product) => {
+  let productItem = `<li class="scrollbar-item">
+                <div class="product-card" data-product-id="${product.id}">
+                  <img src=${product.image} />
+                  <div class="product-info">
+                    <div class="product-category">
+                      brand: ${product.brand}
+                    </div>
+                    <div class="product-title">
+                      ${product.name}
+                    </div>
+                    <div class="product-price">${product.price} MAD</div>
+                  </div>
+                </div>
+              </li>`
+  
+        producListTow.innerHTML += productItem;
+              
+});
+
+let allProducts = [...products, ...prudact2];
 
 // JavaScript to handle the modal functionality
 document.addEventListener('DOMContentLoaded', function() {
@@ -194,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.product-card').forEach(card => {
     card.addEventListener('click', function() {
       const productId = this.getAttribute('data-product-id');
-      const product = products.find(p => p.id == productId);
+      const product = allProducts.find(p => p.id == productId);
       
       if (product) {
         currentProduct = product;
@@ -302,4 +350,7 @@ let btnsPlan = document.querySelectorAll(".btn-plan");
           window.open(whatsappUrl, "_blank");
         });
       });
+
+
+
 
